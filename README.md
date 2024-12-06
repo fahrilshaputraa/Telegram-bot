@@ -20,10 +20,10 @@ Telegram Monitoring Bot adalah bot berbasis Python untuk memonitoring sistem ser
 
 ## Instalasi
 1. Clone repository:
-git clone https://github.com/username/telegram-monitoring-bot.git cd telegram-monitoring-bot
+git clone https://github.com/fahrilshaputraa/Telegram-bot.git
 
 2. Install dependencies:
-pip install -r requirements.txt
+``` pip install -r requirements.txt ```
 
 markdown
 Copy code
@@ -36,7 +36,7 @@ Copy code
   ```
 
 4. Jalankan bot:
-sudo python3 bot.py
+``` sudo python3 bot.py ```
 
 ## Cara Penggunaan
 - **Command**:
