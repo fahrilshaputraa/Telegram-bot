@@ -6,9 +6,12 @@ import socket
 import os
 import subprocess
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Konfigurasi Threshold dan Chat ID
-CHAT_ID = "6652516735"  # Ganti dengan chat_id Telegram Anda
+CHAT_ID = os.getenv("CHAT_ID")  # Ganti dengan chat_id Telegram Anda
 CPU_THRESHOLD = 80       # Alert jika CPU di atas 80%
 MEMORY_THRESHOLD = 90    # Alert jika RAM di atas 90%
 STORAGE_THRESHOLD = 90   # Alert jika storage di atas 90%
@@ -145,7 +148,7 @@ Internet: {'Connected' if check_internet() else 'Disconnected'}
 
 # Main function
 def main():
-    API_TOKEN = '7650472102:AAH1_aktpa3zrt8FLrYS_vRkmxKAh-daiAY'
+    API_TOKEN = os.getenv("API_TOKEN")
 
     # Build aplikasi Telegram bot
     application = ApplicationBuilder().token(API_TOKEN).build()
